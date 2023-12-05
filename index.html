@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/08d8f45a71.js" crossorigin="anonymous"></script>
+    <title>Mundo anime</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#footer">Contactanos</a>
+        <a href="#estrenos">Estrenos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#home">Inicio</a>
+
+        <img id="logo" src="Img/Logos Mundo Anime/Mundo anime Logo.png"alt="Logo" style="width: 15%; height: auto; vertical-align: middle; margin: 5px; margin-left: 50px; padding: 0; max-width: 100%;">
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Slider/Slider 1.jpg" alt="">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Slider/Slider Suzume.png" alt="">
+            <div class="text"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Slider/Tokyo Revengers slider.jpg" alt="">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <div id="noticias">
+        <h1>Noticias</h1>
+    </div>
+    <div class="caja-grande">
+
+
+
+        <div class="caja1">
+            <img class="noticia" src="Img/Noticias/Pokemon .png" alt="Ash y Pikachu">
+        </div>
+        <h2>
+            Los actores del doblaje en español de 'Pokémon' se despiden de la serie <br>
+            después de 25 años
+        </h2>
+        <p>
+            Tras poner su voz a Ash, Meowth, Jessie y James, los intérpretes en lengua castellana de estos
+            míticos personajes dicen adiós a su labor en el anime y repasan su trabajo en una entrevista. <br>
+
+            <a href="https://vandal.elespanol.com/noticia/r23326/los-actores-de-doblaje-de-pokemon-se-despiden-de-la-serie-despues-de-25-anos-en-una-emotiva-entrevista"
+                target="_blank">Lee mas en: </a>
+        </p>
+
+
+    </div>
+
+    <div class="caja-grande">
+        <div class="caja1">
+            <img src="Img/Noticias/One piece.jpg" alt="Luffy">
+        </div>
+        <h2>
+            El nuevo manga de One Piece está en problemas: Se publica sin terminar <br>
+            y su creador inquieta a los fans
+        </h2>
+        <p class="caja-parrafo">
+            Eiichiro Oda no ha podido terminar el dibujo del capítulo 1098 de One Piece y los seguidores
+            del manga están preocupados por el estado de salud del mangaka. <br>
+
+            <a href="https://vandal.elespanol.com/noticia/r23151/el-nuevo-manga-de-one-piece-esta-en-problemas-se-publica-sin-terminar-y-su-creador-inquieta-a-los-fans
+        " target="_blank"> Lee mas en: </a>
+
+        </p>
+    </div>
+
+    <div class="caja-grande">
+        <div class="caja1">
+            <img src="Img/Noticias/Jujutsu kaisen.png" alt="Portada Jujutsu kaisen">
+        </div>
+        <h2>
+            ¿Que esta pasando entre los animadores de Jujutsu Kaisen y MAPPA?
+
+        </h2>
+        <p class="caja-parrafo">
+            Las cosas no estan saliendo para nada bien en MAPPA, pues pronto podría perder
+            algunos trabajadores por exploto laboral. <br>
+            <br>
+            Aunque Jujutsu Kaisen ha conquistado a los fans con su animacion deslumbrante y trama cautivadora,
+            detras de escena, la situacion no parece ser tan prometedora. En medio del éxito indiscutible
+            de la temporada actual, las redes sociales han sido testigos de una creciente ola de críticas
+            y respecta al inminente arco de Shibuya. <br>
+
+            <a href="https://www.geekmi.news/series/Que-esta-pasando-entre-los-animadores-de-Jujutsu-Kaisen-y-MAPPA-20231115-0027.html"
+                target="_blank">Lee mas en:</a>
+        </p>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Noticias/Suzume.jpg" alt="Suzume">
+        </div>
+        <h2>
+            Suzume llega a Crunchyroll el 17 de noviembre
+        </h2>
+        <p class="caja-parrafo">
+            Crunchyroll anuncia que Suzume (Suzume no Tojimari) llegará en streaming a la plataforma el próximo
+            17 de noviembre a las 02:00 horas. Por el momento se desconoce si el último trabajo del director
+            Makoto Shinkai estará disponible con doblaje en castellano o si solo contará con su versión original
+            con subtítulos. <br>
+
+            <a href=" https://ramenparados.com/suzume-llega-a-crunchyroll-el-17-de-noviembre/" target="_blank">
+                Lee mas en:</a> <br>
+            <br>
+
+            A continuación te dejamos el trailer de la película.
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2rPPppw6Bhk?si=n5rsSov9Ix4BxXZ4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        </p>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Noticias/Tokyo revengers noticia.jpg" alt="Tokyo Revengers">
+        </div>
+        <h2>
+            “Tokyo Revengers”: horario y cómo ver los capítulos de la temporada 3 del anime
+
+        </h2>
+        <p class="caja-parrafo">
+            Los capítulos de la temporada 3 del anime de “Tokyo Revengers” se pueden ver en las plataformas
+            de streaming Disney Plus y Star Plus, de acuerdo al país donde te encuentres. Los episodios se
+            estrenan desde el martes 3 de octubre, a nivel internacional, y de manera simulcast: al paralelo
+            con su emisión en Japón. <br>
+            Los nuevos capítulos estarán disponibles todos los jueves. Todavía no se sabe la cantidad de
+            episodios que contará esta entrega, pero se presume que no serán menos de 12 episodios. <br>
+            <br>
+            A continuación te dejamos el trailer de la nueva temporada.
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/di3WrXsDelw?si=FF7FX7TodfUxTFYq"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        </p>
+    </div>
+    <div id="estrenos">
+        <h1>
+            Los animes más esperados de la temporada de otoño 2023
+
+        </h1>
+    </div>
+    <p>
+        A continuación, te dejamos los 10 animes que consideremos destacan especialmente en esta temporada de otoño
+        2023.
+
+    </p>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Pluto.png" alt="Pluto">
+        </div>
+        <h2>
+            Pluto de Naoki Urasawa - 26 de octubre
+
+        </h2>
+        <p class="caja-parrafo">
+            El gran homenaje del maestro Naoki Urasawa a Osamu Tezuka, conocido como ‘Dios del manga’, en su propia
+            versión <br>
+            de ‘El mayor robot en la Tierra’, uno de los arcos argumentales más increíbles de la mítica Astro Boy.
+            Pluto lo tiene todo para ser el gran anime de la temporada otoñal: investigación, asesinatos y suspense
+            al más puro estilo Urasawa.
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hSwuO6HyAVA?si=xEgjLyGsV4s09_J3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Shingeki.jpg" alt="Eren Jeager">
+
+        </div>
+        <h2>
+            Shingeki no Kyojin: The Final Season Parte 4 - 4 de noviembre
+        </h2>
+        <p class="caja-parrafo">
+            Tras una espera interminable, la odisea de Eren Jaeger y el resto de habitantes del planeta llega
+            a su fin. Una de las series más espectaculares de la historia de la animación y el manga nos ha hecho
+            vivir una odisea en su tramo final, y es que su desenlace será uno de los momentos más emocionantes
+            de toda la temporada otoñal.
+        </p>
+        <div= class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gEvOsi7mqqk?si=BbhuaUWUHxtrdI6d"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
+
+
+
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/1-spy-x-family-season-2.jpg" alt="Spy X Family">
+        </div>
+        <h2>
+            Spy x Family (Temporada 2) - 7 de octubre
+
+        </h2>
+        <p class="caja-parrafo">
+            Los Forger regresa este otoño, unos meses en los que Anya y el resto de personajes de la serie
+            volverán a destacar en los nuevos capítulos de esta ‘familia’ tan peculiar.
+
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HMGUZfstetw?si=AJ6anw5gzmUMhy8O"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Undead unluck.jpg" alt="Undead Unluck">
+        </div>
+        <h2>
+            Undead Unluck - 7 de octubre
+
+        </h2>
+        <p class="caja-parrafo">
+            Shonen Jump y anime, dos palabras que juntas levantan siempre grandes expectativas.
+            Undead Unluck ha sido una destacada serie de la revista semanal japonesa, y finalmente recibe
+            su propia serie de animación. Trata la historia de Andy y Fuuko, un chico inmortal y una chica
+            con mala suerte, ambos con un deseo de finalizar sus vidas que les acabará uniendo en busca
+            de ese objetivo.
+
+        </p>
+        <div class="video">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m4aJdCkilgE?si=FjS5BoNS51aEG3d6"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Dr Stone.jpg" alt="Portada de Dr Stone">
+        </div>
+        <h2>
+            Dr. Stone: New World (Parte 2) - 12 de octubre
+
+        </h2>
+        <p class="caja-parrafo">
+            La tercera temporada de Dr. Stone finalizará este otoño mientras Senku y el resto de sus amigos
+            continúan explorando el Nuevo Mundo en su búsqueda del origen de la petrificación de la humanidad.
+
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWuWKcXvKI?si=GXRv8qt5vvCIY5TL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Frieren.jpg" alt="Frieren">
+        </div>
+        <h2>
+            Frieren - 29 de septiembre
+
+        </h2>
+        <p class="caja-parrafo">
+            Una historia de fantasía y nostalgia que apunta a ser uno de los grandes animes de este otoño,
+            con una elfa como protagonista que forma parte de un grupo de héroes que derrotó al rey demonio.
+            Un viaje a través de la vida, en el que la propia Frieren verá como su larga esperanza de vida
+            se convierte en un largo viaje en el que el resto de sus compañeros no pueden acompañarle durante
+            tanto tiempo.
+
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vEF077uVx8M?si=8l0Cq08ZZllwCZi8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="caja-estrenos">
+        <div class="caja1">
+            <img src="Img/Estrenos/Under Ninja.png" alt="Under Ninja">
+
+        </div>
+        <h2>
+            Under Ninja - 6 de octubre
+
+        </h2>
+        <p class="caja-parrafo">
+            Una serie que apunta a posible sorpresa de la temporada. Realizada por Kengo Hanazawa
+            (autor de la popular ‘I Am a Hero’), nos sitúa en un Japón moderno en el que los ninjas
+            siguen existiendo. Kudo, el protagonista, es uno de ellos, y a partir de ahí la historia
+            irá desarrollándose.
+
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ya5JnFNwDMA?si=jhc2zGq0lEB6hT8s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+<div id="footer"></div>
+    <footer class="pie-pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Img/Logos Mundo Anime/Logo Footer.png" alt="Logo de Mundo Anime">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id quam vitae ipsum
+                    consectetur luctus et eu elit. Vestibulum ante ipsum primis in faucibus orci luctus
+                    et ultrices posuere cubilia curae; Quisque non convallis dui. Maecenas rutrum, massa
+                    nec commodo consequat, risus est varius nibh, a interdum enim leo non nisi. Suspendisse
+                    tempor quam eget feugiat mollis. </p>
+            </div>
+
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo2">
+            <small>&copy; 2023 <b> Mundo Anime</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
